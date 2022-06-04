@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(45, 169, 226);
+
+    p, a {
+        font-family: "Poppins", sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .logout {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+     
+}
+

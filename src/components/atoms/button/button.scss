@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(48, 186, 217), rgb(17, 209, 206));
+    font-weight: 600;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgb(48, 186, 217);
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid rgb(48, 186, 217);
+    color: rgb(48, 186, 217);
+}

@@ -1,0 +1,17 @@
+.button-invert {
+    border: 1px solid rgb(48, 186, 217);
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(48, 186, 217);
+    background: transparent;
+    border-radius: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-invert:hover {
+    background-color: rgb(48, 186, 217);
+    color: white;
+}

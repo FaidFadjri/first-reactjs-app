@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Poppins:wght@400;600&display=swap');
+
+$bg: #fff;
+$text: #382b22;
+$light-pink: #d3f7ff;
+$pink: #98dcfe;
+$dark-pink: #6b88d5;
+$pink-border: #318db5;
+$pink-shadow: #fafafa;
+$small: 300px;
+$medium: 900px;
+
+
+.main-page {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $small) {
+      display: none;
+    }
+
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .illustrasi {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+    p {
+        font-family: 'Joan', serif;
+        font-size: 20px;
+        text-align: center;
+
+        strong {
+            font-family: 'Poppins', serif;
+            font-size: 25px;
+        }
+    }
+
+
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+
+        &.login-button {
+          font-weight: 600;
+          color: $text;
+          text-transform: uppercase;
+          padding: 1.25em 2em;
+          background: $light-pink;
+          border: 2px solid $pink-border;
+          border-radius: 0.75em;
+          transform-style: preserve-3d;
+          transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+          &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $dark-pink;
+            border-radius: inherit;
+            box-shadow: 0 0 0 2px $pink-border, 0 0.625em 0 0 $pink-shadow;
+            transform: translate3d(0, 0.75em, -1em);
+            transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+          }
+          &:hover {
+            background: $pink;
+            transform: translate(0, 0.25em);
+            &::before {
+              box-shadow: 0 0 0 2px $pink-border, 0 0.5em 0 0 $pink-shadow;
+              transform: translate3d(0, 0.5em, -1em);
+            }
+          }
+          &:active {
+            background: $pink;
+            transform: translate(0em, 0.75em);
+            &::before {
+              box-shadow: 0 0 0 2px $pink-border, 0 0 $pink-shadow;
+              transform: translate3d(0, 0, -1em);
+            }
+          }
+        }
+      }
+}
+
+.right {
+    width: 460px;
+    background-color: #e2f7ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); 
+
+    @media screen and (max-width: $small) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $medium) {
+      width: 100%;
+    }
+
+    .title {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    form {
+        width: 90%;
+    }
+
+}
+
+
+
+
+

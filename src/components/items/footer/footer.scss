@@ -1,0 +1,50 @@
+.footer-wrap {
+    width: 100%;
+    background-color: rgb(45, 169, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .brand-wrap {
+        border-radius: 0.5rem;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px 20px 5px;
+        margin: 10px;
+        flex: 1;
+
+
+        .logo-react {
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+        }
+
+        p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    .credit-wrap {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+
+        .icon-wrap {
+            padding: 20px;
+            display: flex;
+            column-gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

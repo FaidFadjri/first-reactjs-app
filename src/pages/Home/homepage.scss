@@ -1,0 +1,20 @@
+.homepage-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .button-area {
+        display: flex;
+        margin-top: 20px;
+        padding: 10px;
+        align-self: flex-start;
+    }
+
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+    }
+}
